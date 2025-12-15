@@ -4,10 +4,7 @@ body {
   position: relative;
   vertical-align:middle;
   background-color: #0f172a;
-  h1 {
-    color: #facc15;
-    text-align: center;
-  }
+}
   h2{
     color: #facc15;
     text-align: center;
@@ -23,8 +20,9 @@ body {
   align-items: center;
 }
 img {
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   display: block;
   margin: auto;
 }
-  } 
