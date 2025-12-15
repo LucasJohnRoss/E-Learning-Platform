@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Module 3 - Password Safety{% endblock %}
+
+{% block content %}
+  <div class="module-info">
+
+<div class="module-header">
+  <h2>Password Safety</h2>
+</div>
+
+    <p>
+      Password safety is one of the most important parts of protecting your personal
+      and work accounts. Weak or reused passwords allow attackers to break into
+      systems, access sensitive data, and impersonate users. Strong password habits
+      dramatically reduce the risk of a security breach.
+    </p>
+
+    <h3 class="module-subtitle">Create Strong Passwords</h3>
+    <p>
+      A strong password is long, unique, and difficult to guess. Avoid using personal
+      information such as birthdays, names, or common words. Instead, use a mix of
+      letters, numbers, and symbols. Many organisations also encourage using 
+      passphrases. Longer combinations of random words that are easier to remember 
+      but extremely difficult to crack.
+    </p>
+
+    <h3 class="module-subtitle">Avoid Reusing Passwords</h3>
+    <p>
+      Reusing the same password across multiple accounts is dangerous. If one service
+      becomes compromised, attackers often try the same password on other platforms
+      using a technique known as credential stuffing. Every account should have a 
+      different password to prevent one breach from turning into many.
+    </p>
+
+    <h3 class="module-subtitle">Use Multi-Factor Authentication (MFA)</h3>
+    <p>
+      MFA adds an additional layer of security by requiring something you know 
+      (your password) and something you have (a code sent to your phone or an 
+      authentication app). Even if someone discovers your password, they will not be 
+      able to log in without the second factor.
+    </p>
+
+    <h3 class="module-subtitle">Never Share Your Passwords</h3>
+    <p>
+      Passwords are personal and must never be shared — not with colleagues, friends,
+      or even IT staff. Legitimate support teams will never ask for your password.
+      Sharing passwords makes it impossible to track who accessed what, increases 
+      the risk of mistakes, and can expose sensitive data.
+    </p>
+
+    <h3 class="module-subtitle">Recognise Password Scams</h3>
+    <p>
+      Attackers may pretend to be IT support, your manager, or a trusted service to
+      trick you into revealing your password. Be cautious of unexpected messages
+      asking you to “verify your account,” “unlock your access,” or “reset your
+      password” through unfamiliar links.
+    </p>
+
+    <h3 class="module-subtitle">How to Keep Your Passwords Safe</h3>
+    <ul>
+      <li>Use a unique password for every account.</li>
+      <li>Create long, complex passwords or passphrases.</li>
+      <li>Enable Multi-Factor Authentication whenever possible.</li>
+      <li>Never write passwords on sticky notes or share them with anyone.</li>
+      <li>Report suspicious password-related messages to IT immediately.</li>
+    </ul>
+
+    <div style="margin-top: 25px;"></div>
+    <a href="{{ url_for('module3_passwords') }}" class="btn-yellow">Take the Test</a>
+    </div>  
+    
+  </div>
+{% endblock %}
+

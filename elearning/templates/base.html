@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{% block title %}E-Learning Platform{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">
+        <a href="{{ url_for('home') }}">Cyber Awareness</a>
+      </h1>
+      <nav class="nav">
+        <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+        <a href="{{ url_for('module1_info') }}" class="nav-link">Module 1 - Phishing</a>
+        <a href="{{ url_for('module2_info') }}" class="nav-link">Module 2 - Malware</a>
+        <a href="{{ url_for('module3_info') }}" class="nav-link">Module 3 - Password Safety</a>
+        <a href="{{ url_for('module4_info') }}" class="nav-link">Module 4 - Payments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© E-Learning Prototype</small>
+    </div>
+  </footer>
+</body>
+</html>
+
+

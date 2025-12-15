@@ -1,0 +1,8 @@
+1.Open Google Chrome
+2.Navigate to the three dots in the top right corner, find the Extension section and open the Manage Extension Page
+3.In the top right corner of the Extensions page switch Developer Mode on
+4.In the top left corner click the Load Unpacked button, find and select the Extension folder stored on your local device.
+5.Find the "Web-Page Blocker" extension in the centre of the screen and turn on the switch to allow the extension to run in the background.
+6.Refresh the Extension
+7.Open the extension in the extension menu in the top right of the toolbar
+8.Optional-In the toolbar menu pin the extension for quick access

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Home - E-Learning{% endblock %}
+
+{% block content %}
+
+<!-- Recently Completed -->
+<section class="section">
+  <h2 class="home-heading">Recently Completed</h2>
+  <div class="row thumbs">
+    <div class="thumb" aria-label="placeholder"></div>
+    <div class="thumb" aria-label="placeholder"></div>
+    <div class="thumb" aria-label="placeholder"></div>
+    <div class="thumb" aria-label="placeholder"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Up Next -->
+<section class="section">
+  <h2 class="home-heading">Up Next</h2>
+  <div class="row cards">
+    <article class="card">
+      <div class="thumb" aria-hidden="true"></div>
+      <div class="title">Module 1 - Phishing</div>
+      <div class="meta">Approx. 3-5 minutes</div>
+      <a class="btn-yellow" href="{{ url_for('module1_info') }}">Begin</a>
+    </article>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Other topics -->
+<section class="section">
+  <h2 class="home-heading">Other Topics</h2>
+  <div class="row cards">
+    <article class="card">
+      <div class="thumb"></div>
+      <div class="title">Module 2 - Malware</div>
+      <div class="meta">Approx. 3-5 minutes</div>
+      <a class="btn-yellow" href="{{ url_for('module2_info') }}">Begin</a>
+    </article>
+    <article class="card">
+      <div class="thumb"></div>
+      <div class="title">Module 3 - Password Safety</div>
+      <div class="meta">Approx. 3-5 minutes</div>
+      <a class="btn-yellow" href="{{ url_for('module3_info') }}">Begin</a>
+    </article>
+    <article class="card">
+      <div class="thumb"></div>
+      <div class="title">Module 4 - Secure Payments</div>
+      <div class="meta">Approx. 3-5 minutes</div>
+      <a class="btn-yellow" href="{{ url_for('module4_info') }}">Begin</a>
+    </article>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Quit button -->
+<section class="section quit-section">
+  <a class="btn-yellow secondary" href="{{ url_for('logout') }}">Log Out</a>
+</section>
+
+{% endblock %}
+
+
+
+

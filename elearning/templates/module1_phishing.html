@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}Module 1 - Phishing{% endblock %}
+
+{% block content %}
+<div class="card">
+
+  <div class="module-header">
+    <h2>Module 1 - Phishing</h2>
+  </div>
+
+  <p>Match each phishing term to the correct definition, then submit your answers.</p>
+
+  {% if error %}
+    <p style="color:#ff9c9c;"><strong>{{ error }}</strong></p>
+  {% endif %}
+
+  <form method="post" action="{{ url_for('module1_phishing') }}">
+
+    <!-- Question 1 -->
+    <section class="question-block">
+      <h3 class="module-subtitle">Question 1</h3>
+
+      <div class="matching-container">
+
+        <div class="matching-left">
+          <label>Email Phishing</label>
+          <select name="q1_email" required>
+            <option value="">Choose…</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <label>Smishing</label>
+          <select name="q1_smish" required>
+            <option value="">Choose…</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <label>Spear Phishing</label>
+          <select name="q1_spear" required>
+            <option value="">Choose…</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <label>Vishing</label>
+          <select name="q1_vish" required>
+            <option value="">Choose…</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+
+        <div class="matching-right">
+          <p><strong>1.</strong> A personalised attack using social or organisational information.</p>
+          <p><strong>2.</strong> The use of text messages to trick someone into sharing information.</p>
+          <p><strong>3.</strong> A phishing attack delivered through voice calls or voicemail.</p>
+          <p><strong>4.</strong> The use of emails to trick someone into sharing information.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <button class="btn-yellow" type="submit">Submit Answers</button>
+  </form>
+
+  {% if finished %}
+    <div class="divider"></div>
+    <h3 class="module-subtitle">Results</h3>
+    <p><strong>Your Score:</strong> {{ score }} / {{ total }}</p>
+
+    <p style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a class="btn-yellow" href="{{ url_for('module1_phishing') }}">Retake Module</a>
+      <a class="btn-yellow" href="{{ url_for('home') }}">Return Home</a>
+    </p>
+  {% endif %}
+
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Module 1 - Phishing Information{% endblock %}
+
+{% block content %}
+  <div class="module-info">
+
+    <div class="module-header">
+  <h2>Phishing</h2>
+    </div>
+
+
+    <p>
+      Phishing is the use of fraudulent messages to gain access to information 
+      you shouldn't be able to. Understanding how to recognise these attacks 
+      is vital for protecting yourself and your organisation.
+    </p>
+
+    <h3 class="module-subtitle">Email Phishing</h3>
+    <p>The use of emails to trick an individual into sharing information.</p>
+
+    <h3 class="module-subtitle">Smishing</h3>
+    <p>The use of text messages to trick an individual into sharing information.</p>
+
+    <h3 class="module-subtitle">Spear Phishing</h3>
+    <p>
+      A targeted attack using personalised messages based on social media or 
+      organisation information.
+    </p>
+
+    <h3 class="module-subtitle">Vishing</h3>
+    <p>
+      A phishing attack involving a phone call or voice message pretending 
+      to be legitimate.
+    </p>
+
+    <h3 class="module-subtitle">How to Spot a Phishing Attempt</h3>
+    <ul>
+      <li>Check the sender — suspicious or unofficial emails.</li>
+      <li>Phishing uses urgency or emotional pressure.</li>
+      <li>Unexpected links or attachments can be unsafe.</li>
+      <li>Be cautious when asked for personal information.</li>
+    </ul>
+
+    <div style="margin-top: 25px;">
+      <a href="{{ url_for('module1_phishing') }}" class="btn-yellow">Take the Test</a>
+    </div>
+
+  </div>
+{% endblock %}
+

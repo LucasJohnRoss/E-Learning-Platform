@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Module 4 - Secure Payments{% endblock %}
+
+{% block content %}
+  <div class="module-info">
+
+<div class="module-header">
+ <h2>Secure Payments</h2>
+</div>
+   
+    <p>
+      Secure payment practices help protect both individuals and organisations
+      from fraud, scams, and financial loss. Attackers often target online payments
+      by stealing card details, redirecting transactions, or tricking people into
+      approving fraudulent payments. Understanding how to verify payment requests
+      and protect financial information is essential in any workplace.
+    </p>
+
+    <h3 class="module-subtitle">Verify Payment Requests</h3>
+    <p>
+      Always confirm the source of a payment request before taking action.
+      Criminals may impersonate managers, suppliers, or finance teams and ask
+      for urgent payments or changes to bank details. Never rely on email alone
+      always double-check through an approved communication channel such as a
+      phone call or internal system.
+    </p>
+
+    <h3 class="module-subtitle">Use Trusted Payment Platforms</h3>
+    <p>
+      Payments should only be made through verified and trusted systems. Avoid
+      entering financial information on unfamiliar websites or platforms that lack
+      security indicators such as HTTPS. Unsecured or unofficial sites increase the
+      risk of card theft or unauthorised access.
+    </p>
+
+    <h3 class="module-subtitle">Watch for Refund and Invoice Scams</h3>
+    <p>
+      Attackers often send fake invoices or issue false refund notices to trick users
+      into submitting card details or confirming payments. Unexpected invoices,
+      duplicate requests, or unrecognised vendors should always be reported or
+      checked with your finance department.
+    </p>
+
+    <h3 class="module-subtitle">Card Security</h3>
+    <p>
+      Card details including full number, expiry date, and CVV must never be
+      shared over email, messaging apps, or plain text. These details should only be
+      entered into secure, approved systems. Even images or screenshots of card
+      details can be enough for attackers to commit fraud.
+    </p>
+
+    <h3 class="module-subtitle">How to Stay Safe When Making Payments</h3>
+    <ul>
+      <li>Verify payment requests through a trusted communication channel.</li>
+      <li>Only enter payment information on secure, approved websites.</li>
+      <li>Watch for unexpected invoices, refund requests, or urgent emails.</li>
+      <li>Never share card information through unprotected channels.</li>
+      <li>Report suspicious payment activity to finance or IT immediately.</li>
+    </ul>
+
+  <div style="margin-top: 25px;"></div>
+    <a href="{{ url_for('module4_payments') }}" class="btn-yellow">Take the Test</a>
+    
+  </div>  
+
+
+  </div>
+{% endblock %}
+

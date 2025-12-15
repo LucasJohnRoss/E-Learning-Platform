@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: monospace;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+html {
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 50px 30px;
+}
+html::before {
+    
+  content:
+    'Your organisation has configured this warning to be shown for the webpage you are attempting to access, this is because accessing this webpage could be seen as time wasting';
+}
+
+body {
+  display: none !important;
+}

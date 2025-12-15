@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "prompt": "You receive an email from 'IT Support' asking you to reset your password via a link. What should you do?",
+    "options": [
+      "Click the link and reset it immediately",
+      "Verify directly through the company’s official site or report it",
+      "Forward it to others to warn them"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": 2,
+    "prompt": "The sender’s address is 'admin@micr0soft-support.com'. What makes this suspicious?",
+    "options": [
+      "It includes misspellings or numbers in the name",
+      "It is from a big company so it is fine",
+      "It includes 'support', which is trustworthy"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": 3,
+    "prompt": "An email contains a link to 'verify your account', but hovering shows a different website. What should you do?",
+    "options": [
+      "Click to check the site",
+      "Copy and paste it manually",
+      "Do not click — report it as suspicious"
+    ],
+    "answer_index": 2
+  },
+  {
+    "id": 4,
+    "prompt": "You get a message claiming you have won a prize, but you must provide personal info. What’s best?",
+    "options": [
+      "Share your info to claim it",
+      "Delete or report the message as phishing",
+      "Click the link to see if it’s real"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": 5,
+    "prompt": "Phishing emails often try to make you act quickly. What tactic is this?",
+    "options": [
+      "Urgency or fear tactic",
+      "Reward follow-up",
+      "Polite reminder"
+    ],
+    "answer_index": 0
+  }
+]

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Module 2 - Malware{% endblock %}
+
+{% block content %}
+  <div class="module-info">
+
+<div class="module-header">
+ <h2>Malware</h2>
+</div>
+   
+
+
+    <p>
+      Malware (malicious software) is any software that is designed to damage, disrupt,
+      or gain unauthorised access to a system, device, or network. It can be installed
+      through unsafe downloads, malicious email attachments, infected websites, or
+      compromised USB drives. Understanding the main types of malware helps you
+      recognise how they behave and how to defend against them.
+    </p>
+
+    <h3 class="module-subtitle"> Viruses</h3>
+    <p>
+      A virus attaches itself to legitimate files or programs and spreads when those
+      files are opened or shared. Once active, it can corrupt data, slow systems down,
+      or spread to other machines on the network.
+    </p>
+
+    <h3 class="module-subtitle">Trojans</h3>
+    <p>
+      A trojan disguises itself as a legitimate program, such as a “free” tool or update.
+      When the user runs it, it can create backdoors, steal data, or install additional
+      malicious software in the background.
+    </p>
+
+    <h3 class="module-subtitle">Ransomware</h3>
+    <p>
+      Ransomware encrypts files or locks devices and then demands payment to restore
+      access. It can stop a business from operating by blocking access to critical data
+      and systems, even if only one user is initially infected.
+    </p>
+
+    <h3 class="module-subtitle">Adware</h3>
+    <p>
+      Adware displays unwanted adverts, pop-ups, or redirects your browser to specific
+      sites. While some adware is simply annoying, it can also track browsing activity
+      or be used to deliver more serious malware.
+    </p>
+
+    <h3 class="module-subtitle">How to Avoid Malware</h3>
+    <p>
+      To reduce the risk of malware, only download software from trusted sources, keep
+      your operating system and applications up to date, and never open unexpected
+      attachments or links from unknown senders. Use approved security tools provided
+      by your organisation, and report any suspicious activity or unusual pop-ups to IT
+      immediately.
+    </p>
+
+  <div style="margin-top: 25px;"></div>
+    <a href="{{ url_for('module2_malware') }}" class="btn-yellow">Take the Test</a>
+  </div>
+
+  </div>
+{% endblock %}

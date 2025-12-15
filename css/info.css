@@ -1,0 +1,23 @@
+body {
+  min-width: 300px;
+  min-height: 100px;
+  position: relative;
+  vertical-align:middle;
+  background-color: #0f172a;
+  h1 {
+    color: #facc15;
+    text-align: center;
+  }
+  h2{
+    color: #facc15;
+    text-align: center;
+  }
+  h3 {
+    color: #facc15;
+    text-align: center;
+  }
+  p{
+    color: #facc15;
+    text-align: center;
+  }
+}

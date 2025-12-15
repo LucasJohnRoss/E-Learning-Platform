@@ -1,0 +1,63 @@
+{
+  "name": "Web-Page Blocker",
+  "description": "A chrome web extension that blocks access to certain web pages.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions":[
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "login.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "content_scripts":[
+    {
+        "matches":[
+            "https://www.facebook.com/*"
+        ],
+        "css":[
+            "css/timeWaste.css"
+        ]
+    },
+    {
+        "matches":[
+            "https://cronometer.com/*"
+        ],
+        "css":[
+            "css/malware.css"
+        ]
+    },
+    {
+        "matches":[
+            "https://www.phishing.com/*"
+        ],
+        "css":[
+            "css/phishing.css"
+        ]
+    },
+    {
+        "matches":[
+            "https://uk.indeed.com/*"
+        ],
+        "css":[
+            "css/ransomware.css"
+        ]
+    },
+    {
+        "matches":[
+            "https://github.com/*"
+        ],
+        "css":[
+            "css/piracy.css"
+        ]
+    },
+    {
+        "matches":[
+            "https://news.google.com/*"
+        ],
+        "css":[
+            "css/scam.css"
+        ]
+    }
+  ]
+}
