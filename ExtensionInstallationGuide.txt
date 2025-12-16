@@ -6,3 +6,5 @@
 6.Refresh the Extension
 7.Open the extension in the extension menu in the top right of the toolbar
 8.Optional-In the toolbar menu pin the extension for quick access
+
+Usernames & Passwords: admin:admin, user1:password1, user2:password2
